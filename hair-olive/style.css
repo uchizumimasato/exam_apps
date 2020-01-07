@@ -10,51 +10,55 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 header {
-  background-color: gray;
-  height: 150px;
+  /*background-colorプロパティを削除*/
+  /*heightプロパティを削除*/
+  margin-top: 10px;
 }
 
 .heading {
-  height: 100px;
+  /*heightプロパティを削除*/
   width: 960px;
-  background-color: #CCCCCC;
+  /*background-colorプロパティを削除*/
   margin: 0 auto;
-}
-
-.contents {
-  background-color: #C0C0C0;
-  width: 960px;
-  margin: 10px auto;
 }
 
 .navbar {
-  height: 50px;
-  width: 960px;
-  background-color: #A9A9A9;
+  height: 20px;
+  width: 930px;
+  background-color:#ffffff;
   margin: 0 auto;
+  padding: 15px;
+}
+
+.contents {
+  width: 960px;
+  /*background-colorプロパティを削除*/
+  margin: 10px auto;
 }
 
 .left-content {
   height: 400px;
   width: 640px;
-  background-color: white;
+  background-color: #ffffff;
   float: left;
+  padding: 10px;
 }
 
 .right-content {
-  height: 370px;
-  width: 320px;
+  height: 400px;
+  width: 280px;
   background-color: #f9f9f9;
   float: left;
+  padding: 10px;
 }
 
 footer {
-  background: gray;
-  height:50px;
+  /*background-colorプロパティを削除*/
+  /*heightプロパティを削除*/
   text-align: center;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   clear: both;
   display: block;
@@ -72,11 +76,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
 }
 
-ul li {
-  margin: 0;
+li {
+  float: left;
   padding-right: 10px;
 }
 
@@ -94,12 +97,4 @@ td {
 .stylist-name {
   font-size: 16px;
   text-align: center;
-}
-
-a {
-  color: red;
-}
-
-a:hover {
-  color: blue;
 }
